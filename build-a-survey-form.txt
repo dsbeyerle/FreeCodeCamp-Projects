@@ -1,0 +1,113 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> 
+  </head>
+  <body>
+    <h1 id="title">Favorite Pastime Survey</h1>
+    <p id="description" class="description">Fill out this survey to tell us about how you like to spend your free time!</p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label">Enter your name <input id="name" required type="text" placeholder="Forrest" />
+      </label>
+      <label id="email-label"> Enter your email address <input id="email" required type="email" placeholder="e.g. forrest.gump@bubbagump.com">
+      </label>
+      <label for="dropdown"> What kinds of hobbies do you have?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Sports</option>
+          <option value="1">Arts</option>
+          <option value="1">Outdoors</option>
+          <option value="1">Other</option>
+        </select>
+      <label id="number-label"> How many hours per week do you pursue your hobbies? <input id="number" required type="number" class="number" min="0" max="100" placeholder="Select number"></label>
+      </fieldset>
+          <fieldset>
+        <p>Do you wish you had more time to pursue your hobbies?</p>
+        <label for="absolutely" ><input type="radio" value="1" name="time-radio" id="absolutely" class="inline" /> Absolutely</label>
+        <label for="not-really"><input id="not-really" type="radio" value="2" name="time-radio" class="inline" /> Not really </label>
+      </fieldset>
+      <fieldset>
+        <p>Do you participate in your hobby alone or with others?</p>
+        <label for="checkboxes"><input type="checkbox" id="checkboxes" value="0" class="inline"> Alone</label>
+        <label for="checkboxes"><input type="checkbox" id="checkboxes" value="1" class="inline"> With others</label>
+      </fieldset>
+      <fieldset>
+        <label for="hobby-change">How have your hobbies changed or stayed the same as you have gotten older?<textarea id="hobby-change" name="hobby-change" rows="2" cols="20" placeholder="I used to enjoy... Now I love to..."></textarea>
+      </fieldset>
+      <input type="submit" id="submit" class="submit">
+    </form>
+    </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width:100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #326132;
+  color: tan;
+  font-family: Tahoma
+}
+
+h1, .description { 
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+label {
+  display: block;
+  margin: .5rem 0;
+  text-align: left;
+}
+
+input, textarea, select {
+  margin: 5px 0 0 0;
+  width: 100%;
+  min-height: 1em;
+  text-align: left;
+}
+
+input[type="radio"] {
+  text-align: left
+}
+
+.inline {
+  width: unset;
+  vertical-align: middle;
+  margin: 0 0.5em 0 0;
+  align-items: left
+}
+
+.number {
+  width: 120px;
+}
+
+.submit {
+  width: auto;
+  text-align: center;
+  display: block;
+  margin: 1em auto
+}
+
+** end of undefined **
+
